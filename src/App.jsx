@@ -6,6 +6,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import SignIn from "./pages/SignIn";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
+import SignUp from "./pages/SignUp";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
           <Route path="/offers" element={<Offers />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/sign-up" element={<SignUp />} />
           <Route path="/not-found" element={<NotFound />} />
         </Routes>
       </Router>
