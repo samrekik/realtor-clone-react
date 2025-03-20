@@ -5,19 +5,22 @@ import Offers from "./pages/Offers";
 import ForgotPassword from "./pages/ForgotPassword";
 import SignIn from "./pages/SignIn";
 import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
 function App() {
   return (
     <>
-     <Router>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/profile" element={<Profile/>}/>
-        <Route path="/offers" element={<Offers/>}/>
-        <Route path="/forgot-password" element={<ForgotPassword/>}/>
-        <Route path="/sign-in" element={<SignIn/>}/>
-        <Route path="/not-found" element={<NotFound/>}/>
-      </Routes>
-      </Router> 
+      <Router>
+      <Header />
+        <Routes>
+         
+          <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/offers" element={<Offers />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="/not-found" element={<NotFound />} />
+        </Routes>
+      </Router>
     </>
   );
 }
